@@ -1,0 +1,21 @@
+{
+  "name": "log-timestamp",
+  "description": "Prepend timestamps to functions like console.log, console.warn, etc",
+  "version": "0.0.0",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-log-timestamp.git"
+  },
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [ "console", "console.log", "log", "logger", "timestamp" ]
+}
