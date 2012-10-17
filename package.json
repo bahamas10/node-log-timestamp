@@ -9,7 +9,7 @@
     "url": "git://github.com/bahamas10/node-log-timestamp.git"
   },
   "scripts": {
-    "test": "node tests/test.js"
+    "test": "for f in tests/*; do echo \"$f\"; node \"$f\"; done; echo 'passed!'; exit 0"
   },
   "dependencies": {},
   "devDependencies": {},
