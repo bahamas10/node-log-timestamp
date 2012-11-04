@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('../')(function() {
+require('../')('<<%s>> %s', function() {
   return new Date().toJSON();
 });
 

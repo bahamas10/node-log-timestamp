@@ -1,10 +1,10 @@
 var format = require('util').format;
 var default_format = '[%s] %s';
 var funcs = {
-  'log': console.log,
-  'info': console.info,
-  'warn': console.warn,
-  'error': console.error
+  log: console.log,
+  info: console.info,
+  warn: console.warn,
+  error: console.error
 };
 
 // patch when require()d
@@ -14,6 +14,11 @@ patch(default_format);
 module.exports = patch;
 
 function patch(s, fn) {
+  if (typeof s === 'function') {
+    fn = s;
+    s = null;
+  }
+  s = s || default_format;
   fn = fn || Date;
   Object.keys(funcs).forEach(function(k) {
     console[k] = function() {
