@@ -22,9 +22,8 @@ function patch(s, fn) {
   fn = fn || Date;
   Object.keys(funcs).forEach(function(k) {
     console[k] = function() {
-      if (arguments[0])
-        arguments[0] = format(s, fn(), arguments[0]);
-      funcs[k].apply(this, arguments);
+      arguments[0] = format(s, fn(), arguments[0]);
+      funcs[k].apply(console, arguments);
     };
   });
 }
