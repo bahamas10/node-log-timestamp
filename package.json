@@ -1,7 +1,7 @@
 {
   "name": "log-timestamp",
   "description": "Prepend timestamps to functions like console.log, console.warn, etc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "contributors": [],
   "repository": {
