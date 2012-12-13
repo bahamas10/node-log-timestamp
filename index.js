@@ -1,10 +1,10 @@
 var format = require('util').format;
 var default_format = '[%s] %s';
 var funcs = {
-  log: console.log,
-  info: console.info,
-  warn: console.warn,
-  error: console.error
+  log: console.log.bind(console),
+  info: console.info.bind(console),
+  warn: console.warn.bind(console),
+  error: console.error.bind(console)
 };
 
 // patch when require()d
