@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 require('../')('<<%s>> %s', function() {
-  return new Date().toJSON();
+  return Date.now();
 });
 
 ['log', 'info', 'warn', 'error'].forEach(function(k) {

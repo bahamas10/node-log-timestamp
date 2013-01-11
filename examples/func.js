@@ -2,6 +2,6 @@
 
 console.log('Before log-timestamp');
 require('../')('[%s] %s', function() {
-  return new Date().toJSON();
+  return Date.now();
 });
 console.log('After log-timestamp');

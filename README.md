@@ -16,7 +16,7 @@ yields
 
 ```
 Before log-timestamp
-[Thu Aug 23 2012 13:08:32 GMT-0700 (PDT)] After log-timestamp
+[2012-08-23T20:08:32.000Z] After log-timestamp
 ```
 
 You can specify a custom format as well
@@ -29,14 +29,14 @@ console.log('hello %s', 'world');
 yields
 
 ```
-date="Wed Oct 17 2012 13:35:02 GMT-0700 (PDT)" message="hello world"
+date="2012-08-23T20:08:37.000Z" message="hello world"
 ```
 
-Get fancy and pass in a function to call instead of `Date()`
+Get fancy and pass in a function to call instead of `new Date().toISOString()`
 
 ``` js
 require('log-timestamp')('[%s] %s', function() {
-  return new Date().toJSON();
+  return Date.now();
 });
 console.log('hello world');
 ```
@@ -44,7 +44,7 @@ console.log('hello world');
 yields
 
 ```
-[2012-10-17T20:42:18.608Z] hello world
+[1345752562432] hello world
 ```
 
 Install
