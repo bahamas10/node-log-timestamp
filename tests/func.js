@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-require('../')('<<%s>> %s', function() {
-  return Date.now();
+require('../')(function() {
+  return '<<' + Date.now() + '>> %s';
 });
 
 ['log', 'info', 'warn', 'error'].forEach(function(k) {

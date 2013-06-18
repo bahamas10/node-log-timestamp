@@ -4,6 +4,7 @@
   "version": "0.0.5",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "contributors": [],
+  "main": "./log-timestamp.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/bahamas10/node-log-timestamp.git"
@@ -11,11 +12,19 @@
   "scripts": {
     "test": "for f in tests/*; do echo \"$f\"; node \"$f\"; done; echo 'passed!'; exit 0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "log-prefix": "0.0.0"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
-  "keywords": [ "console", "console.log", "log", "logger", "timestamp" ]
+  "keywords": [
+    "console",
+    "console.log",
+    "log",
+    "logger",
+    "timestamp"
+  ]
 }
