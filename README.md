@@ -22,7 +22,7 @@ Before log-timestamp
 You can specify a custom function as well
 
 ``` js
-require('log-timestamp')(function() { 'date="' + Date.now() + '" message="%s"');
+require('log-timestamp')(function() { return 'date="' + new Date().toISOString() + '" message="%s"' });
 console.log('hello %s', 'world');
 ```
 
