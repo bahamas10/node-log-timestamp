@@ -12,5 +12,5 @@ function patch(fn) {
 
 // the default date format to print
 function timestamp() {
-  return '[' + new Date().toISOString() + ']';
+  return '[' + new Date().toISOString().slice(0,19).replace('T', ' ') + ']';
 }
