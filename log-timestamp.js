@@ -12,7 +12,7 @@ function patch(prefix) {
   else if(typeof prefix === 'string' && prefix)
     logprefix(() => prefix + ' ' + timestamp());
   else
-    logprefix(timestamp)
+    logprefix(timestamp);
 }
 
 // the default date format to print
