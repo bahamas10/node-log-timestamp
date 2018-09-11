@@ -1,7 +1,7 @@
 {
   "name": "log-timestamp",
   "description": "Prepend timestamps to functions like console.log, console.warn, etc",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "contributors": [],
   "main": "./log-timestamp.js",
@@ -13,7 +13,7 @@
     "test": "for f in tests/*; do echo \"$f\"; node \"$f\"; done; echo 'passed!'; exit 0"
   },
   "dependencies": {
-    "log-prefix": "0.0.0"
+    "log-prefix": "0.1.0"
   },
   "devDependencies": {},
   "optionalDependencies": {},
