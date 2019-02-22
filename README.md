@@ -32,6 +32,20 @@ yields
 date="2012-08-23T20:08:37.000Z" message="hello world"
 ```
 
+Also you can specify a custom prefix string
+
+``` js
+require('log-timestamp')('#WHATEVER');
+console.log('hello world');
+```
+
+yields
+
+```
+#WHATEVER [2012-08-23T20:08:37.000Z] hello world
+```
+
+
 Install
 ------
 

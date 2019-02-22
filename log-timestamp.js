@@ -6,8 +6,13 @@ module.exports = patch;
 
 patch(); // patch when require'd
 
-function patch(fn) {
-  logprefix(fn || timestamp);
+function patch(prefix) {
+  if(typeof prefix === 'function')
+    logprefix(prefix);
+  else if(typeof prefix === 'string' && prefix)
+    logprefix(() => prefix + ' ' + timestamp());
+  else
+    logprefix(timestamp);
 }
 
 // the default date format to print
